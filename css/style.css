@@ -13,6 +13,7 @@ body {
     clear: both;
 } 
 .main-header {
+    min-height: 50px;
     background-color: black;
 }
 .main-navigation {
@@ -167,7 +168,7 @@ body {
 
 /* index page */
 .index-background {
-    background: #000000 url("../img/background-image.jpg") no-repeat center top;
+    background: #000000 url("../img/background-image.jpg") center top;
 }
 
 .index-logo {
