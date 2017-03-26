@@ -10,14 +10,14 @@
     <body class="index-background">
         <header class="main-header">
             <div class="container clearfix">
-                <nav class="main-navigation clearfix">
+                <nav class="main-navigation">
                     <div class="logo">
                         <a><img src="img/logo.png" width="111" height="24" alt="Барбершоп"></a>
                     </div>
                     <ul class="navigation-list">
-                        <li><a class="navigation-link">Информация</a></li>
+                        <li><a class="navigation-link" href="#">Информация</a></li>
                         <li><a class="navigation-link" href="#">Новости</a></li>
-                        <li><a class="navigation-link" href="#">Прайс-лист</a></li>
+                        <li><a class="navigation-link" href="price-list.html">Прайс-лист</a></li>
                         <li><a class="navigation-link" href="catalog.html">Магазин</a></li>
                         <li><a class="navigation-link" href="#">Контакты</a></li>
                     </ul>
@@ -114,5 +114,21 @@
                 </section>
             </div>
         </footer>
+        <div class="modal-content">
+            <button class="modal-close" type="button" title="Закрыть">Закрыть</button>
+            <h2 class="modal-tittle">Личный кабинет</h2>
+            <p class="modal-description">Введите свой логин и пароль</p>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                <input class="user-login" type="text" name="login" placeholder="Логин">
+                <input class="user-password" type="password" name="password" placeholder="Пароль">
+                <label class="login-checkbox">
+                    <input type="checkbox" name="remember">
+                    <span class="checkbox-icon"></span>
+                    Запомните меня
+                </label>
+                <a class="restore" href="#">Я забыл пароль</a>
+                <button class="login-button" type="submit">Войти</button>
+            </form> 
+        </div>
     </body>
 </html>
