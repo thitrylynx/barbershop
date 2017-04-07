@@ -21,7 +21,7 @@ body {
 }
 .main-navigation {
     float: left;
-    min-width: 650px;
+    width: 700px;
 }
 .logo {
     float: left;
@@ -227,6 +227,23 @@ body {
 
 /* MODAL PAGE */
 
+/* ANIMATION */
+
+@keyframes show {
+    0%   {
+        transform: translateY(-2000px);
+    }
+    70%  {
+        transform: translateY(30px);
+    }
+    90%  {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .modal-content {
     position: absolute;
     top: 210px;
@@ -241,6 +258,10 @@ body {
     color: #000000;
     background: #f7f2ef url("../img/pattern-1.jpg");
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+.content-show {
+    display: block;
+    animation:  show 0.5s;
 }
 .modal-close {
     position: absolute;
@@ -335,7 +356,7 @@ body {
     transform: rotate(-45deg);
 }
 .restore {
-    margin-left: 60px;
+    margin-left: 55px;
     color: #000000;
 }
 .login-button {
@@ -370,6 +391,10 @@ body {
     background: #e9e5dc url("../img/map.jpg");
     border: 7px solid #ffffff;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+.map-show {
+    display: block;
+    animation:  show 0.6s;
 }
 .map-close {
     position: relative;
@@ -411,11 +436,13 @@ body {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
 }
-
+.overlay-show {
+    display: block;
+}
 /* INDEX PAGE */
 
 .index-background {
-    background: #000000 url("../img/background-image.jpg") center no-repeat;
+    background: #000000 url("../img/background-image.jpg") top no-repeat;
 }
 .index-logo {
     width: 368px;

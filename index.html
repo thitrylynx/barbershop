@@ -5,7 +5,7 @@
         <title>Барбершоп «Бородинский»</title>
         <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet"> 
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/min.css" rel="stylesheet">
     </head>
     <body class="index-background">
         <header class="main-header">
@@ -78,7 +78,7 @@
                     <p>Время работы:<br>
                         пн — пт: с 10:00 до 22:00<br>
                         сб — вс: с 10:00 до 19:00</p>
-                    <a class="btn-contact" href="#">Как проехать</a>
+                    <a class="btn-contact map-content" href="#">Как проехать</a>
                     <a class="btn-contact" href="#">Обратная связь</a>
                 </div>
                 <div class="index-content-right">
@@ -99,7 +99,7 @@
                 <section class="footer-contacts">
                     <p>Барбершоп «Бородинский»<br>
                         Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-                        <a href="#">Как нас найти?</a><br>
+                        <a class="map-content-link" href="#">Как нас найти?</a><br>
                         Телефон: +7 (812) 666-02-66</p>
                 </section>
                 <section class="footer-social">
@@ -119,8 +119,8 @@
             <h2 class="modal-tittle">Личный кабинет</h2>
             <p class="modal-description">Введите свой логин и пароль.</p>
             <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                <input class="user-login" type="text" name="login" placeholder="Логин">
-                <input class="user-password" type="password" name="password" placeholder="Пароль">
+                <input class="user-login" type="text" name="login" placeholder="Логин" required>
+                <input class="user-password" type="password" name="password" placeholder="Пароль" required>
                 <label class="login-checkbox">
                     <input type="checkbox" name="remember">
                     <span class="checkbox-icon"></span>
@@ -135,5 +135,6 @@
             <div class="map"></div>
         </div>
         <div class="modal-overlay"></div>
+        <script src="js/min.js"></script>
     </body>
 </html>
