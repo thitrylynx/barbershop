@@ -69,20 +69,20 @@ body {
 .user-block {
     float: right;
 }
-.user-block .login {
+.user-block .login-link {
     display: block;
     padding: 23px 20px 23px 45px;
     color: #ffffff;
     text-decoration: none;
 }
-.login:hover {
+.login-link:hover {
     background-color: #1f1f1f; 
     opacity: 0.9;
 }
-.login:hover::before {
+.login-link:hover::before {
     opacity: 1;
 }
-.login::before {
+.login-link::before {
     content: " ";
     position: absolute;
     display: block;
@@ -120,7 +120,7 @@ body {
     color: #ffffff;
     background: #252525 url("../img/pattern-2.jpg");
 }
-.inner-page-footer {
+.price-page-footer {
     box-shadow: inset 0px 30px 40px -15px #000000;
 }
 .footer-contacts {
@@ -263,7 +263,7 @@ body {
     display: block;
     animation:  show 0.5s;
 }
-.modal-close {
+.btn-close {
     position: absolute;
     top: 0px;
     left: 470px;
@@ -274,8 +274,8 @@ body {
     border: none; 
     cursor: pointer;
 }
-.modal-close::after,
-.modal-close::before {
+.btn-close::after,
+.btn-close::before {
     content: " ";
     position: absolute;
     width: 19px;
@@ -283,14 +283,14 @@ body {
     margin-left: -7px;
     background-color: #ffffff;
 }
-.modal-close::before {
+.btn-close::before {
     transform: rotate(45deg);
 }
-.modal-close::after {
+.btn-close::after {
     transform: rotate(-45deg);
 }
-.modal-close:hover::after,
-.modal-close:hover::before {
+.btn-close:hover::after,
+.btn-close:hover::before {
     background-color: #733b08;
 } 
 .modal-tittle {
@@ -306,7 +306,7 @@ body {
     margin-top: 15px;
     margin-left: 90px; 
 }
-.login-form {
+.user-form {
     margin: 30px 90px;
 }
 .user-login,
@@ -359,7 +359,7 @@ body {
     margin-left: 55px;
     color: #000000;
 }
-.login-button {
+.login-btn {
     width: 280px;
     height: 45px;
     margin-top: 10px;
@@ -372,7 +372,7 @@ body {
     border: none;
     cursor: pointer;
 }
-.login-button:hover {
+.login-btn:hover {
     background-color: #733b08;
 }
 
@@ -444,7 +444,7 @@ body {
 .index-background {
     background: #000000 url("../img/background-image.jpg") top no-repeat;
 }
-.index-logo {
+.main-logo {
     width: 368px;
     min-height: 204px;
     margin: 0 auto;
@@ -463,7 +463,7 @@ body {
 .features-item:nth-child(3) {
     margin-left: 30px;
 }
-.feature-name {
+.item-name {
     display: block;
     margin: 0;
     padding: 0;
@@ -471,7 +471,7 @@ body {
     line-height: 28px;
     text-align: center;
 }
-.feature-name::after {
+.item-name::after {
     content: " ";
     display: block;
     width: 15px;
@@ -481,7 +481,7 @@ body {
     background-color: #ffffff;
     transform: rotate(45deg);
 }
-.feature-description {
+.item-description {
     width: 300px;
     margin: 0;
     margin-top: 35px;
@@ -494,22 +494,22 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-.index-content {
+.main-content {
     margin-top: 35px;
     padding: 45px 80px;
     color: #000000;
     background: #f7f2ef url(../img/pattern-1.jpg);
 }
-.index-second {
+.main-content {
     padding-bottom: 20px;
 }
-.index-content-left {
+.main-content-left {
     position: relative;
     float: left;
     width: 370px;
     min-height: 330px;
 }
-.index-content-left::after {
+.main-content-left::after {
     content: " ";
     position: absolute;
     top: 35px;
@@ -520,7 +520,7 @@ body {
     background-color: black;
     background: url("../img/content-shadow.png");
 }
-.index-content-title {
+.main-content-title {
     margin: 0;
     font-size: 30px;
     line-height: 42px;
@@ -555,7 +555,7 @@ body {
 .more:hover {
     background-color: #733b08;
 }
-.index-content-right {
+.main-content-right {
     float: right;
     width: 310px;
     min-height: 330px;
@@ -586,12 +586,12 @@ body {
 .btn-gallery:hover {
     background-color: #733b08;
 }
-.index-content:last-child p {
+.main-content:last-child p {
     margin: 0;
     margin-top: 20px;
     padding: 0; 
 }
-.index-content:last-child form {
+.main-content:last-child form {
     margin-top: 30px;
 }
 .btn-contact {
@@ -611,13 +611,13 @@ body {
 .btn-contact:hover {
     background-color: #733b08;
 }
-.index-content:last-child .index-content-right {
+.main-content:last-child .main-content-right {
     line-height: 21px;
 }
-.appointment-form  {
+.registration-form   {
     width: 310px;
 }
-.appointment-form input {
+.registration-form  input {
     width: 130px;
     height: 35px;
     margin-bottom: 20px;
@@ -629,15 +629,15 @@ body {
     background: transparent;
     border: 2px solid #000000;
 }
-.appointment-form input:nth-child(1),
-.appointment-form input:nth-child(3) {
+.registration-form  input:nth-child(1),
+.registration-form  input:nth-child(3) {
     float: left;
 }
-.appointment-form input:nth-child(2),
-.appointment-form input:nth-child(4) {
+.registration-form  input:nth-child(2),
+.registration-form  input:nth-child(4) {
     float: right;
 }
-.appointment-form input:focus {
+.registration-form  input:focus {
     border: 2px solid #733b08;
 }
 .btn-submit {
@@ -660,7 +660,7 @@ body {
 
 /* PRICE-LIST PAGE */
 
-.inner-page-tittle {
+.main-tittle {
     margin: 0;
     margin-top: 60px;
     margin-bottom: 25px;
@@ -669,11 +669,11 @@ body {
 .inner-content {
     line-height: 21px;
 }
-.big-heading {
+.main-head {
     margin-top: 45px;
     text-align: center;
 }
-.big-heading h2 {
+.main-head h2 {
     position: relative;
     display: inline-block;
     margin: 0;
@@ -683,7 +683,7 @@ body {
     text-align: center;
     background: #f7f2ef url(../img/pattern-1.jpg)
 }
-.big-heading::after {
+.main-head::after {
     content: " ";
     position: relative;
     top: -25px;
@@ -691,12 +691,12 @@ body {
     display: block;
     border-bottom: 3px solid #000000;
 }
-.inner-column {
+.price-column {
     width: 460px;
     margin-top: 50px;
     margin-bottom: 10px;
 }
-.inner-content .left {
+.price-content .left {
     float: left; 
 }
 .left h2 {
@@ -732,7 +732,7 @@ body {
     padding: 0;
     line-height: 24px;
 }
-.inner-content .right {
+.price-content .right {
     float: right;; 
 }
 .custom-list-1 {
@@ -772,11 +772,11 @@ body {
 .prices-table td:last-child {
     text-align: center;
 }
-.inner-content table {
+.price-content table {
     border-collapse: collapse;
 }
 
-.inner-content td {
+.price-content td {
     padding: 10px 15px;
     border: 2px solid #000000;
 }
@@ -795,7 +795,7 @@ body {
     font-size: 30px;
     color: #000000;
 }
-.pages-nav-box ul {
+.pages-navigation ul {
     min-width: 319px;
     padding-left: 0;
 }
@@ -811,7 +811,7 @@ body {
 .page-link:hover {
     color: #733b08;
 }
-.breadcrumbs .current {
+.breadcrumbs .active-page {
     color: #808080;
 }
 .sidebar-filter {
@@ -1037,7 +1037,7 @@ li .pagination-link {
 li .pagination-link:hover {
     background-color: #733b08;
 }
-li .active {
+.pagination-list .active {
     display: block;
     padding: 17px;
     text-align: center;
@@ -1056,11 +1056,6 @@ li .active {
     margin-top: 60px;
     font-size: 30px;
     color: #000000;
-}
-.pages-nav-container ul {
-    margin: 0;
-    margin-top: 25px;
-    padding: 0;
 }
 .gallery {
     float: left; 
@@ -1095,7 +1090,7 @@ li .active {
     float: right;
     width: 140px;
 }
-.item-description {
+.product-description {
     float: left;
     width: 400px;
     margin-top: 30px;

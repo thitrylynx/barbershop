@@ -1,4 +1,4 @@
-var link = document.querySelector(".login");
+var link = document.querySelector(".login-link");
 var popup = document.querySelector(".modal-content");
 var close = popup.querySelector(".modal-close");
 var login = popup.querySelector("[name=login]");
